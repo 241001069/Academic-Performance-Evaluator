@@ -2,14 +2,14 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: ubuntu-latest
 
 steps:
-- script: echo "Building Academic Performance Evaluator Project"
-  displayName: 'Build Project'
+- script: echo "Building Academic Performance Evaluator"
+  displayName: Build
 
-- script: echo "Running Test Cases"
-  displayName: 'Run Tests'
+- script: echo "Running Tests"
+  displayName: Test
 
 - script: echo "Deploying Application"
-  displayName: 'Deploy Application'
+  displayName: Deploy
